@@ -3,7 +3,7 @@
   Name = "desktop"
   ID = "top.langenius.app"
   Version = "0.0.3"
-  Build = 4
+  Build = 5
 
 [Development]
   HelperText = "This binary was built with debug symbols"
