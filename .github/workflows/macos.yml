@@ -24,14 +24,7 @@ jobs:
         run: fyne package -os darwin -icon fyne.png
 
       - name: create-dmg-action
-        # You may pin to the exact commit or the version.
-        # uses: QQxiaoming/create-dmg-action@9da339e5d8baa50036b55ed2c6545fb51cee72c4
-        uses: QQxiaoming/create-dmg-action@v0.0.2
-        with:
-          # source dir
-          srcdir: desktop.app
-          # dmg name
-          name: desktop.dmg
+        run: zip -r desktop.zip desktop.app
                 
       - name: Release Upload
         # You may pin to the exact commit or the version.
@@ -41,5 +34,5 @@ jobs:
           # The GitHub access token which will be used to upload release artifacts. Usually this will be `secrets.GITHUB_TOKEN`.
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            desktop.dmg
+            desktop.zip
           # A list of files to publish, relative to the repository root.The files must be specified as a newline-delimited list of paths.
