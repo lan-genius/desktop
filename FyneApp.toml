@@ -1,9 +1,9 @@
 [Details]
-  Icon = "../../theme/icons/fyne.png"
-  Name = "Fyne Demo"
-  ID = "io.fyne.demo"
-  Version = "2.4.0"
-  Build = 14
+  Icon = "fyne.png"
+  Name = "desktop"
+  ID = "top.langenius.app"
+  Version = "0.0.3"
+  Build = 4
 
 [Development]
   HelperText = "This binary was built with debug symbols"
