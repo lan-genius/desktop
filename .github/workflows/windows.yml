@@ -16,7 +16,7 @@
 #
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples/tree/master/FunctionApp
 
-name: Deploy DotNet project to Azure Function App
+name: Windows
 
 on:
   push:
@@ -46,8 +46,8 @@ jobs:
       uses: actions/setup-go@v5.0.2
       with:
         # The Go version to download (if necessary) and use. Supports semver spec and ranges. Be sure to enclose this option in single quotation marks.
-        # go-version: 1.22.6
-        go-version: 1.19.13
+        go-version: 1.22.6
+        # go-version: 1.19.13
     - name: fyne install
       run: go install fyne.io/fyne/v2/cmd/fyne@v2.5.1
     - name: fyne build
