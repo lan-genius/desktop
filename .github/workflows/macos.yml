@@ -24,7 +24,6 @@ jobs:
       - name: fyne build
         run: |
           fyne package -os darwin -icon fyne.png
-          xattr -d com.apple.quarantine desktop.app
           zip -r desktop.zip desktop.app
           ls
 
